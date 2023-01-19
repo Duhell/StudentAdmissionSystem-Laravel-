@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('partials_css/min_width.css');
+@import url('partials_css/background_colors.css');
+@import url('partials_css/media_queries.css');
+@import url('partials_css/max_width.css');
+@import url('partials_css/height.css');
+@import url('partials_css/width.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D62929;
+}
+:root{
+    --cardinal_red: #BD2031;
+    --light_color: #fff;
+}
+
+.errorMsg{
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cardinal_red);
+    color: #fff;
+    padding: .9rem;
+    border-radius: 10px;
+}
+
+.errorInput{
+    font-size: 13px;
+    color: var(--cardinal_red);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    font-size: .9rem;
+}
+
+/* Login Page */
+.home_background{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.SAS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SAS > div > span{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--light_color);
+    text-transform: uppercase;
+}
+.SAS > div > small{
+    color: var(--light_color);
+}
+
+/* Style for inputs in Login Page */
+.credentials_login{
+    width: 100%;
+}
+.credentials_login > p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--cardinal_red);
+}
+
+.credentials_login > .logo{
+    margin-block: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.credentials_login > .logo > img,
+nav > div > img{
+    width: 80px;
+    height: 80px;
+}
+
+.credentials_login > .login_style{
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+}
+.login_style > form > .application_ID,
+.login_style > form > .application_password{
+    display: flex;
+    flex-direction: column;
+    margin: .8rem 0;
+}
+
+.application_ID > label,
+.application_password > label{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.application_ID > input,
+.application_password > input{
+    padding: .6rem .8rem;
+    font-size: .8rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+.application_ID > input:focus,
+.application_password > input:focus{
+    outline-color: var(--cardinal_red);
+}
+.login_style > form > .btn_login{
+    display: flex;
+    justify-content: center;
+}
+.login_style > form > .btn_login > input[type='submit']{
+    padding: .8rem;
+    width: 50%;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: var(--cardinal_red);
+    color: var(--light_color);
+    transition: .4s ease;
+}
+.login_style > form > .btn_login > input[type='submit']:hover{
+    background-color: rgb(190, 106, 106);
+}
+
+
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+    padding-right: 2em;
+}
+nav > div{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+nav > div > div > span{
+    font-size: 1.2rem;
+    color: var(--cardinal_red);
+    font-weight: 600;
+    margin-inline: 2rem;
+}
+nav > div > div > span > small{
+    font-size: .8rem;
+    color: #000;
+    font-weight: 400;
+    margin-inline: 2rem;
+}
+hr{
+    border-color: var(--cardinal_red);
+}
+nav > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .9rem;
+    margin-right: 3rem;
+    color: var(--cardinal_red);
+}
+
+/* index_student */
+.student_index{
+    padding-block: 1.3rem;
+}
+.student_index > .setprofileuser{
+    display: flex;
+    justify-content: space-between;
+}
+.student_index > div > span{
+    color: var(--cardinal_red);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.info_divider{
+    border-radius: 5px;
+    margin-top: 1.7rem;
+    padding: .4rem;
+}
+.info_divider > p{
+    color: var(--light_color);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.form_grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1rem;
+    margin-block: 3rem;
+}
+.form_grid_2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-block: 3rem;
+}
+
+.form_grid > div,
+.form_grid_2 > div{
+    display: flex;
+    flex-direction: column;
+}
+.form_grid > div > label,
+.form_grid_2 > div > label{
+    font-size: .9rem;
+    font-weight: 600;
+}
+.form_grid > div > input,
+.form_grid_2 > div > input{
+    padding: .3rem .9rem;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.form_grid > div > input:focus,
+.form_grid_2 > div > input:focus{
+    outline-color: var(--cardinal_red);
+}
+.form_grid > div > select,
+.form_grid_2 > div > select{
+    padding: .3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+
+    border-bottom: 1px solid #000;
+}
+.form_grid > div > select:focus,
+.form_grid_2 > div > select:focus{
+    outline-color: var(--cardinal_red);
+}
+
+.btn{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn > input[type="submit"]{
+    padding: .6rem 1rem;
+    width: 200px;
+    border-radius: 5px;
+    border-color:var(--cardinal_red);
+    cursor: pointer;
+    background-color: var(--cardinal_red);
+    transition: .3s ease;
+    color: var(--light_color);
+}
+.btn > input[type="submit"]:hover{
+    border-color: #F5F5F5;
+    box-shadow: 3px 8px 10px rgba(0, 0, 0, .3);
+}
+
+.visibility{
+    visibility: hidden  ;
+}
+
+/* Admin Page */
+
+.search_container{
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search_container >div:first-child > span{
+    color: var(--cardinal_red);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.search_container >div:last-child{
+    position: relative;
+    width: 300px;
+}
+.search_container >div:last-child > input{
+    width: 100%;
+    padding: .3em 1em .3em 3em;
+    border-radius: 5px;
+    border-color: var(--cardinal_red);
+}
+.search_container >div:last-child > input:is(:hover,:focus){
+    outline-color: var(--cardinal_red);
+
+}
+.search_container >div:last-child > svg{
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 30px;
+}
+
+.total_number_container{
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Table */
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: var(--cardinal_red);
+  border-radius: 10px 10px 0 0;
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: .9rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 500;
+  font-size: .9rem;
+  color: #000;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+section{
+    margin: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+
+

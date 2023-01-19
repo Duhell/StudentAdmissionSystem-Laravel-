@@ -1,0 +1,9 @@
+@extends('../main')
+@section('title','Student')
+@section('content')
+    @include('../partials/navbar')
+    @include('../partials/partials_student/index')
+@endsection
+@section('foot')
+    @include('../partials/partials_student/foot')
+@endsection

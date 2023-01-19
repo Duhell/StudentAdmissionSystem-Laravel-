@@ -1,0 +1,89 @@
+/* tablet size */
+@media(max-width: 768px ) {
+    .SAS{
+        display: none!important;
+        width: 0!important;
+    }
+    .SAS > div{
+        display: none;
+    }
+    .bg-light{
+        width: 100%;
+    }
+
+    /* navbar */
+    nav {
+        padding: 1em 0 1em 2em!important;
+    }
+    nav > div > div{
+        margin-left: 20px;
+    }
+    nav > div > div > span{
+        font-size: 1rem!important;
+    }
+
+    /* student Page */
+    .student_index{
+        max-width: 720px!important;
+        padding: .5em 2em;
+    }
+    .info_divider{
+        margin-bottom: 20px;
+    }
+
+    .form_grid
+    {
+        grid-template-columns: repeat(2,1fr)!important;
+    }
+    .form_grid_2{
+        grid-template-columns: 1fr!important;
+
+    }
+
+    .form_grid > div,
+    .form_grid_2 > div{
+        margin: 8px;
+        overflow: hidden;
+    }
+
+}
+
+/* Phone Size */
+@media (max-width:375px){
+     /* navbar */
+     nav {
+        padding: 1em 0 1em 2em!important;
+    }
+    nav > div > div{
+        display: none;
+    }
+    nav > div > img{
+        width: 50px!important;
+        height: 50px!important;
+    }
+
+    /* student Page */
+    .info_divider{
+        margin-bottom: 10px;
+    }
+
+    .form_grid
+    {
+        grid-template-columns: 1fr!important;
+    }
+    .form_grid_2{
+        grid-template-columns: 1fr!important;
+
+    }
+
+    .form_grid > div,
+    .form_grid_2 > div{
+        margin: 8px;
+    }
+
+    .btn {
+        justify-content: center!important;
+    }
+
+
+}
